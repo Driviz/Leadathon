@@ -1,4 +1,4 @@
-module github.com/lead
+module github.com/Driviz/Leadathon
 
 go 1.17
 

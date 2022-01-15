@@ -3,8 +3,8 @@ package service
 import (
 	"net/http"
 
+	"github.com/Driviz/Leadathon/chessgames"
 	"github.com/gorilla/mux"
-	"github.com/lead/chessgames"
 )
 
 func NewService(data chessgames.DataMap) *service {

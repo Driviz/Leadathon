@@ -4,8 +4,8 @@ import (
 	"context"
 	"log"
 
-	"github.com/lead/chessgames"
-	"github.com/lead/service"
+	"github.com/Driviz/Leadathon/chessgames"
+	"github.com/Driviz/Leadathon/service"
 )
 
 func main() {
