@@ -1,7 +1,9 @@
 package service
 
 import (
+	"fmt"
 	"net/http"
+	"os"
 
 	"github.com/Driviz/Leadathon/chessgames"
 	"github.com/gorilla/mux"
@@ -22,5 +24,5 @@ func (s *service) StartService() {
 	r.HandleFunc("/", s.GetAll)
 	r.HandleFunc("/{code}", s.GetByCode)
 
-	http.ListenAndServe(":8080", r)
+	http.ListenAndServe(fmt.Sprintf(":%s", os.Getenv("PORT")), r)
 }
